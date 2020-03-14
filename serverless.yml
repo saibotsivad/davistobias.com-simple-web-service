@@ -1,0 +1,20 @@
+service: my-simple-server
+plugins:
+  - serverless-offline
+custom:
+  serverless-offline:
+    port: 3001
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  timeout: 10
+  memorySize: 128
+functions:
+  server:
+    handler: index.server
+    events:
+      - http:
+          method: any
+          path: /{path+}

@@ -1,0 +1,25 @@
+{
+  "name": "davistobias.com-simple-web-service",
+  "version": "1.0.0",
+  "description": "Code to go along with the blog post.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "start": "serverless offline start --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saibotsivad/davistobias.com-simple-web-service.git"
+  },
+  "keywords": [],
+  "author": "saibotsivad",
+  "license": "VOL",
+  "bugs": {
+    "url": "https://github.com/saibotsivad/davistobias.com-simple-web-service/issues"
+  },
+  "homepage": "https://github.com/saibotsivad/davistobias.com-simple-web-service#readme",
+  "devDependencies": {
+    "serverless": "^1.36.3",
+    "serverless-offline": "^4.2.1"
+  }
+}
